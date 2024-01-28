@@ -1,0 +1,6 @@
+POST http://localhost:3000/ask-openai
+Content-Type: application/json
+
+{
+  "question": "Ola, tudo bem?"
+}
