@@ -2,5 +2,5 @@ POST http://localhost:3000/ask-openai
 Content-Type: application/json
 
 {
-  "question": "Ola, tudo bem?"
+  "question": "Faça apenas uma lista de 5 tipos de cafés especiais com as características: Aroma Terroso, Acidez Citrico, Sabor Frutado, Corpo Encorpado. Apenas o nome do café."
 }
