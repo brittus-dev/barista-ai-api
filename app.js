@@ -1,4 +1,9 @@
 require('dotenv').config()
+const cors = require('cors')
+const corsOptions = {
+    origin: 'http://localhost:4200',
+    optionsSuccessStatus: 200
+}
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
@@ -8,6 +13,7 @@ const openai = new OpenAI({
 })
 
 app.use(express.json())
+app.use(cors(corsOptions))
 
 app.post('/ask-openai', async (req, res) => {
     try {
